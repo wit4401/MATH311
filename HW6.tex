@@ -1,0 +1,81 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,mathtools,amssymb}
+
+\title{\textbf{MATH 311 Homework 2.6}}
+\author{Will Townsend}
+\date{March 7, 2022}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem 17}
+$\dfrac{dy}{dx}=\sqrt{x+y}-1$\\\\
+$u=x+y\qquad\dfrac{du}{dx}-1=\dfrac{dy}{dx}$\\\\
+$\dfrac{du}{dx}=u^{\frac{1}{2}}=>\int u^{-\frac{1}{2}}du=\int dx$\\\\
+$2\sqrt{u}=x+C=>2\sqrt{x+y}=x+C$
+\section*{Problem 18}
+$\dfrac{dy}{dx}=(x+y+2)^2$\\\\
+$u=x+y+2\qquad\dfrac{du}{dx}-1=\dfrac{dy}{dx}$\\\\
+$\dfrac{du}{dx}=u^2+1=>\int dx=\int\dfrac{du}{u^2+1}$\\\\
+$x+C=\tan^{-1}(u)=>\tan^{-1}(x+y+2)=x+C$\\\\
+$y=\tan(x+C)-x-2$
+\section*{Problem 19}
+$\dfrac{dy}{dx}=(x-y+5)^2$\\\\
+$u=x-y+5\qquad1-\dfrac{du}{dx}=\dfrac{dy}{dx}$\\\\
+$-\dfrac{du}{dx}=u^2-1=>\int dx=\int\dfrac{du}{1-u^2}$\\\\
+$\ln{\left(\sqrt{1-u}\right)}+\ln{\left(\sqrt{1+u}\right)}=x+C$
+\section*{Problem 20}
+$\dfrac{dy}{dx}=\sin{(x-y)}$\\\\
+$u=x-y\qquad\dfrac{du}{dx}=1-\dfrac{dy}{dx}$\\\\
+$1-\dfrac{du}{dx}=\sin{u}=>\int dx=\int\dfrac{du}{1-\sin{u}}$\\\\
+$x=-\dfrac{2}{\frac{\sin{u}}{\cos{u}+1}-1}$\\\\
+$x=-\dfrac{2}{\frac{\sin{(x-y)}}{\cos{(x-y)}+1}-1}$
+\section*{Problem 21}
+$\dfrac{dy}{dx}+\dfrac{y}{x}=x^2y^2$\\\\
+$u=y^{-1}\qquad \dfrac{dy}{dx}=u^{-2}\dfrac{du}{dx}$\\\\
+$-u^{-2}\dfrac{du}{dx}-\dfrac{u^{-1}}{x}=x^2u^{-2}=>\dfrac{du}{dx}-\dfrac{u}{x}=-x^2=>I(x)=x^{-1}$\\\\
+$x^{-1}\dfrac{du}{dx}-\dfrac{u}{x^2}=-x=>\int(x^{-1}u)'=\int-x=>x^{-1}u=C-\dfrac{x^2}{2}=>x^{-1}y^{-1}=C-\dfrac{x^2}{2}$\\\\
+$y=\left(Cx-\dfrac{x^3}{2}\right)^{-1}$
+\section*{Problem 22}
+$\dfrac{dy}{dx}-y=e^{2x}y^3=>y^{-3}\dfrac{dy}{dx}-y^{-2}=e^{2x}$\\\\
+$u=\dfrac{1}{y^2}=>y=\dfrac{1}{\sqrt{u}}\qquad y^{-3}\dfrac{dy}{dx}=-\dfrac{1}{2}\dfrac{du}{dx}$\\\\
+$\dfrac{du}{dx}+2u=-2e^{2x}=>I(x)=e^{2x}$\\\\
+$e^{2x}\dfrac{du}{dx}+2e^{2x}u=-2e^{4x}=>\int(e^{2x}u)'=\int-2e^{4x}$\\\\
+$e^{2x}u=-\frac{1}{2}e^{4x}+C=>e^{2x}y^{-2}=-\frac{1}{2}e^{4x}+C$\\\\
+$y^2=-\frac{1}{2}e^{2x}+Ce^{-2x}$
+\section*{Problem 23}
+$\dfrac{dy}{dx}=\dfrac{2y}{x}-x^2y^2$\\\\
+$u=y^{-1}\qquad\dfrac{dy}{dx}=-u^{-2}\dfrac{du}{dx}$\\\\
+$-u^{-2}\dfrac{du}{dx}=\dfrac{2u^{-1}}{x}-x^2u^{-2}=>-u^{-2}\dfrac{du}{dx}-\dfrac{2u^{-1}}{x}=-x^2u^{-2}=>\dfrac{du}{dx}+\dfrac{2u}{x}=x^2=>I(x)=x^2$\\\\
+$x^2\dfrac{du}{dx}+2xu=x^4=>\int(x^2u)'=\int x^4$\\\\
+$x^2u=\frac{1}{5}x^5+C=>x^2y^{-1}=\frac{1}{5}x^5+C$\\\\
+$y=\frac{1}{5}x^3+Cx^{-2}$
+\section*{Problem 24}
+$\dfrac{dy}{dx}+\dfrac{y}{x-2}=5(x-2)y^{\frac{1}{2}}$\\\\
+$u=y^\frac{1}{2}\qquad\dfrac{dy}{dx}=2u\dfrac{du}{dx}$\\\\
+$2u\dfrac{du}{dx}+\dfrac{u^2}{x-2}=5(x-2)u=>\dfrac{du}{dx}+\dfrac{u}{2(x-2)}=\frac{5}{2}(x-2)=>I(x)=e^{x^2-4x}$\\\\
+$e^{x^2-4x}\dfrac{du}{dx}+e^{x^2-4x}\dfrac{u}{2x-4}=e^{x^2-4x}\frac{5}{2}(x-2)=>\int(e^{x^2-4x}u)'=\frac{5}{2}\int e^{x^2-4x}(x-2)$\\\\
+$e^{x^2-2x}u=\frac{5}{4}e^{x^2-4x}+C$
+\section*{Problem 25}
+$\dfrac{dx}{dt}+tx^3+\dfrac{x}{t}=0=>\dfrac{dx}{dt}+\dfrac{x}{t}=-tx^3=>-x^{-3}\dfrac{dx}{dt}-x^{-2}t=t$\\\\
+$u=x^{-2}\qquad -x^{-3}\dfrac{dx}{dt}=\frac{1}{2}\dfrac{du}{dt}$\\\\
+$\dfrac{du}{dt}-2ut^{-1}=-2t=>I(x)=t^{-2}$\\\\
+$t^{-2}\dfrac{du}{dt}-2ut^{-3}=-2t^{-1}=>\int(ut^{-2})'=\int-2t^{-1}=>ut^{-2}=\ln{(t^{-2})}+C$\\\\
+$y^{-2}t^{-2}=\ln{(t^{-2})}+C$
+\section*{Problem 26}
+$\dfrac{dy}{dx}+y=e^xy^{-2}=>y^2\dfrac{dy}{dx}+y^3=e^x$\\\\
+$u=y^3\qquad 3y^2\dfrac{dy}{dx}=\dfrac{du}{dx}$\\\\
+$\dfrac{du}{dx}+u=e^x=>I(x)=e^x$\\\\
+$e^x\dfrac{du}{dx}+ue^x=e^{2x}=>\int(ue^x)'=\int e^{2x}$\\\\
+$ue^x=\frac{1}{2}e^{2x}+C$\\\\
+$y^3=\dfrac{e^{2x}+C}{2e^x}$
+\section*{Problem 27}
+$\dfrac{dr}{d\theta}=\dfrac{r^2+2r\theta}{\theta^2}=>r^{-2}\dfrac{dr}{d\theta}-2\theta^{-1}r^{-1}=0$\\\\
+$u=r^{-1}\qquad-\dfrac{1}{r^2}\dfrac{dr}{d\theta}=\dfrac{du}{d\theta}$\\\\
+$\dfrac{du}{d\theta}+2u\theta^{-1}=0=>I(x)=\theta^2$\\\\
+$\theta^2\dfrac{du}{d\theta}+2u\theta=0=>\int(u\theta^2)'=\int d\theta$\\\\
+$u\theta^2=\theta+C=>u=\dfrac{\theta+C}{\theta^2}$\\\\
+$r=\dfrac{\theta^2}{\theta+C}$
+\end{document}
