@@ -1,0 +1,107 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,mathtools,amssymb}
+
+\title{\textbf{MATH 311 Homework 2.4}}
+\author{Will Townsend}
+\date{February 22, 2022}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem 1}
+$(x^2y+x^4\cos{x})dx-x^3dy=0=>x^2y+x^4\cos{x}=x^3\dfrac{dy}{dx}$
+$=>x^{-1}y+x\cos{x}=\dfrac{dy}{dx}$\\\\
+$M=(x^2y+x^4\cos{x})dx\quad N=-x^3dy$\\\\
+$M_y=x^2$\\\\
+$N_x=-4x^4$\\\\
+Linear \checkmark\\
+Separable\\
+Exact
+\section*{Problem 2}
+$(x^{\frac{10}{3}}-2y)dx+x\:dy=0=>x^{\frac{10}{3}}-2y=x\dfrac{dy}{dx}$\\\\
+$M=x^{\frac{10}{3}}-2y\:dx\quad N=x\:dy$\\\\
+$M_y=-2$\\\\
+$N_x=1$\\\\
+Linear \checkmark\\
+Separable\\
+Exact
+\section*{Problem 3}
+$\sqrt{-2y-y^2}dx+(3+2x-x^2)dy=0=>(-2y-y^2)^{-\frac{1}{2}}dy=(3+2x-x^2)^{-1}dx$\\\\
+$M=\sqrt{-2y-y^2}\:dx\quad N=3+2x-x^2\:dy$\\\\
+$M_y=-1-y(-2y-y^2)^\frac{3}{2}$\\\\
+$N_x=2-2x$\\\\
+Linear\\
+Separable \checkmark\\
+Exact
+\section*{Problem 4}
+$(ye^{xy}+2x)dx+(xe^{xy}-2y)dy=0$\\\\
+$M=ye^{xy}+2x\:dx\quad N=xe^{xy}-2y\:dy$\\\\
+$M_y=e^{xy}$\\\\
+$N_x=e^{xy}$\\\\
+Linear \\
+Separable\\
+Exact \checkmark
+\section*{Problem 5}
+$xy\:dx+dy=0=>xy+\dfrac{dy}{dx}=0$\\\\
+$xy\:dx+dy=0=>x\:dx=y^{-1}\:dy$\\\\
+$M=xy\:dx\quad N=dy$\\\\
+$M_y=x$\\\\
+$N_x=0$\\\\
+Linear \checkmark\\
+Separable \checkmark\\
+Exact
+\section*{Problem 6}
+$y^2\:dx+(2xy+\cos{y})\:dy=0=>(2xy+\cos{y})\:dy=-y^2\:dx$\\\\
+$M=y^2\:dx\quad N=(2xy+\cos{y})\:dy$\\\\
+$M_y=2y$\\\\
+$N_x=2y$\\\\
+Linear \checkmark\\
+Separable\\
+Exact \checkmark
+\section*{Problem 9}
+$(2xy+3)dx+(x^2-1)dy=0$\\\\
+$M=2xy+3\:dx\quad N=x^2-1\:dy$\\\\
+$M_y=2x\qquad$
+$N_x=2x$\\\\
+$\int2xy+3\:dx=>x^2y+3x\qquad\int x^2-1\:dy=>x^2y-y$\\\\
+$x^2y+3x-y=C$
+\section*{Problem 10}
+$(2x+y)\:dx+(x-2y)\:dy=0$\\\\
+$M=2x+y\:dx\quad N=x-2y\:dy$\\\\
+$M_y=1\qquad$
+$N_x=1$\\\\
+$\int2x+y\:dx=>x^2+xy\qquad\int x-2y\:dy=>xy-y^2$\\\\
+$xy+x^2-y^2=C$
+\section*{Problem 11}
+$(e^x\sin{y}-3x^2)dx+\left(e^x\cos{y}+\dfrac{y^{-\frac{2}{3}}}{3}\right)dy=0$\\\\
+$M=e^x\sin{y}-3x^2\:dx\quad N=e^x\cos{y}+\dfrac{y^{-\frac{2}{3}}}{3}\:dy$\\\\
+$M_y=e^x\cos{y}\quad N_x=e^x\cos{y}$\\\\
+$\int e^x\sin{y}-3x^2\:dx=>e^x\cos{y}-x^3\qquad\int e^x\sin{y}+\dfrac{y^{-\frac{2}{3}}}{3}\:dy=>e^x\sin{y}+\sqrt[3]{y}$\\\\
+$e^x\sin{y}-x^3+\sqrt[3]{y}=C$
+\section*{Problem 12}
+$\cos{x}\cos{y}+2x\:dx-\sin{x}\sin{y}+2y\:dy=0$\\\\
+$M=\cos{x}\cos{y}+2x\:dx\quad N=-\sin{x}\sin{y}+2y\:dy$\\\\
+$M_y=-\cos{x}\sin{y}\quad N_x=-\cos{x}\sin{y}$\\\\
+$\int\cos{x}\cos{y}+2x\:dx=>\sin{x}\cos{y}+x^2\qquad-\int\sin{x}\sin{y}+2y\:dy=>\sin{x}\cos{y}y^2$\\\\
+$\sin{x}\cos{y}+x^2+y^2=C$
+\section*{Problem 21}
+$(x^{-1}+2y^2x)dx+(2yx^2-\cos{y})dy=0\qquad y(1)=\pi$\\\\
+$M=x^{-1}+2y^2x\:dx\quad N=2yx^2-\cos{y}\:dy$\\\\
+$M_y=4xy\quad N_x=4xy$\\\\
+$\int x^{-1}+2y^2x\:dx=>\ln{|x|}+y^2x^2\qquad\int2yx^2-\cos{y}\:dy=>y^2x^2-\sin{y}$\\\\
+$y^2x^2+\ln{|x|}-\sin{y}=C$\\\\
+Find $C$:\\\\
+$\pi^2+\ln{|1|}-\sin{\pi}=C=>C=\pi^2$\\\\
+Final Solution: $y^2x^2+\ln{|x|}-\sin{y}=\pi^2$
+\section*{Problem 22}
+$(ye^{xy}-y^{-1})dx+(xe^{xy}+xy^{-2})dy=0\qquad y(1)=1$\\\\
+$M=ye^{xy}-y^{-1}\:dx\quad N=xe^{xy}+xy^{-2}\:dy$\\\\
+$M_y=yxe^{xy}+y^{-2}\quad N_x=yxe^{xy}+y^{-2}$\\\\
+$\int ye^{xy}-y^{-1}\:dx=>e^{xy}-xy^{-1}\qquad\int xe^{xy}+xy^{-2}\:dy=>e^{xy}-xy^{-1}$\\\\\
+$e^{xy}-xy^{-1}=C$\\\\
+Find $C$:\\\\
+$e-1=C$\\\\
+Final Solution: $e^{xy}-xy^{-1}=e-1$
+\end{document}
