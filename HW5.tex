@@ -1,0 +1,64 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,mathtools,amssymb}
+
+\title{\textbf{MATH 311 Homework 2.5}}
+\author{Will Townsend}
+\date{February 28, 2022}
+
+\begin{document}
+
+\maketitle
+\begin{center}*Note the use of lower case mu instead of Capital mu\end{center}
+\section*{Problem 7}
+$(2xy)dx+(y^2-3x^2)dy=0$\\\\
+$M=2xy\:dx\qquad N=y^2-3x^2\:dy$\\\\
+$M_y=2x\qquad N_x=-6x\quad M_y\neq N_x$\\\\
+$\mu=e^{\int\frac{N_x-M_y}{M}\:dy}=e^{\int\frac{-4}{y}\:dy}=y^{-4}$\\\\
+$\hat{M}=2xy^{-3}\:dx\qquad \hat{N}=y^{-2}-3x^2y^{-4}\:dy$\\\\
+$\hat{M}_y=-6xy^{-3}\qquad \hat{N}_x=-6xy^{-3}\quad M_y=N_x$\\\\
+$\int2xy^{-3}\:dx=>x^2y^{-3}\qquad\int y^{-2}-3x^2y^{-4}\:dy=>-y^{-1}+x^2y^{-3}$\\\\
+Solution: $x^2y^{-3}-y^{-1}=C$
+\section*{Problem 8}
+$(3x^2+y)dx+(x^2y-x)dy=0$\\\\
+$M=3x^2+y\qquad N=x^2y-x$\\\\
+$M_y=1\qquad N_x=2xy-1\quad M_y\neq N_x$\\\\
+$\mu=e^{\int\frac{N_x-M_y}{M}\:dy}=e^{\int\frac{-2(xy-1)}{x(xy-1)}\:dx}=e^{\ln{x^{-2}}}=x^{-2}$\\\\
+$\hat{M}=3+yx^{-2}\:dx\qquad \hat{N}=y-x^{-1}\:dy$\\\\
+$\hat{M}_y=x^{-2}\qquad \hat{N}_x=x^{-2}\quad M_y=N_x$\\\\
+$\int3+yx^{-2}\:dx=>3x-x^{-1}y\qquad\int y-x^{-1}\:dy=>\frac{1}{2}y^2-x^{-1}y$\\\\
+$3x+\frac{1}{2}y^2-x^{-1}y=C$
+\section*{Problem 9}
+$(x^4-x+y)dx-x\:dy=0$\\\\
+$M=x^4-x+y\:dx\qquad N=-x\:dy$\\\\
+$M_y=1\qquad N_x=-1\quad M_y\neq N_x$\\\\
+$\mu=e^{\int-\frac{2}{x}\:dx}=x^{-2}$\\\\
+$\hat{M}=x^2-x^{-1}+yx^{-2}\:dx\qquad \hat{N}=-x^{-1}\:dy$\\\\
+$\hat{M}_y=x^{-2}\qquad \hat{N}_x=x^{-2}\quad M_y=N_x$\\\\
+$\int x^2-x^{-1}+yx^{-2}\:dx=>\frac{1}{3}x^3-\ln{|x|}-x^{-1}y\qquad\int -x^{-1}\:dy=>-x^{-1}y$\\\\
+Final Solution: $\frac{1}{3}x^3-\ln{|x|}-yx^{-1}=C$
+\section*{Problem 10}
+$(2y^2+2y+4x^2)dx+(2xy+x)dy=0$\\\\
+$M=2y^2+2y+4x^2\qquad N=2xy+x$\\\\
+$M_y=4y+2\qquad N_x=2y+1\quad M_y\neq N_x$\\\\
+$\mu=e^{\int\frac{2y+1}{x(2y+1)}\:dx}=x$\\\\
+$\hat{M}=2y^2x+2yx+4x^3\:dx\qquad \hat{N}=2x^2y+x^2\:dy$\\\\
+$\hat{M}_y=4xy+2x\qquad \hat{N}_x=4xy+2x\quad M_y=N_x$\\\\
+$\int 2y^2x+2yx+4x^3\:dx=>x^2y^2+x^2y+x^4\qquad\int 2x^2y+x^2\:dy=>x^2y^2+x^2y$\\\\
+Final Solution: $x^2y^2+x^2y+x^4=C$
+\section*{Problem 11}
+$(y^2+2xy)dx-x^2dy=0$\\\\
+$M=y^2+2xy\qquad N=-x^2$\\\\
+$M_y=2y+2x\qquad N_x=-2x\quad M_y\neq N_x$\\\\
+$\mu=e^{\int\frac{-2(y+2x)}{y(y+2x)}\:dy}=y^{-2}$\\\\
+$\hat{M}=1+2xy^{-1}\:dx\qquad \hat{N}=-y^{-2}x^2\:dy$\\\\
+$\hat{M}_y=-2xy^{-2}\qquad \hat{N}_x=-2xy^{-2}\quad M_y=N_x$\\\\
+$\int1+2xy^{-1}\:dx=>x+x^2y^{-1}\qquad\int-y^{-2}x^2\:dy=>x^2y^{-1}$\\\\
+Final Solution: $x^2y^{-1}+x=C$
+\section*{Problem 12}
+$(2xy^3+1)dx+(3x^2y^2-y^{-1})dy=0$\\\\
+$M=2xy^3+1\qquad N=3x^2y^2-y^{-1}$\\\\
+$M_y=6xy^2\qquad N_x=6xy^2\quad M_y=N_x$\\\\
+$\int2xy^3+1\:dx=>x^2y^3+x\qquad\int3x^2y^2-y^{-1}\:dy=>x^2y^3-\ln{|y|}$\\\\
+Final Solution: $x^2y^3+x-\ln{|y|}=C$
+\end{document}
