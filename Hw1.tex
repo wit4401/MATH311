@@ -1,0 +1,90 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tabto}
+
+\title{Homework 1}
+\author{Will Townsend}
+\date{February 8, 2022}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}\Large{\textbf{\underline{Chapter 1.1}}}\end{center}
+1. Second order, Linear ODE Dependent=$x$ Independent=$t$\\\\
+2. Second order, Linear ODE Dependent=$y$ Independent=$x$\\\\
+3. First order, Non-Linear ODE Dependent=$y$ Independent=$x$\\\\
+4. Second order, Linear PDE Dependent=$u$ Independent=$x,y$\\\\
+5. First order, Non-Linear ODE Dependent=$y$ Independent=$x$\\\\
+6. First order, Non-Linear ODE Dependent=$x$ Independent=$t$\\\\
+7. First order, Non-Linear ODE Dependent=$p$ Independent=$t$\\\\
+8. Second order, Non-Linear ODE Dependent=$y$ Independent=$x$\\\\
+9. Second order, Linear, ODE Dependent=$y$ Independent=$x$\\\\
+10. Fourth order, Linear ODE Dependent=$y$ Independent=$x$\\\\
+11. Second order, Linear PDE Dependent=$N$ Independent=$r$\\\\
+12. Second order, Non-Linear ODE Dependent=$y$ Independent=$x$\\
+
+\pagebreak
+
+\begin{center}\Large{\textbf{\underline{Chapter1.2}}}\end{center}
+Problem 3:\\\\$y=\sin{x}+x^2$ \tab{$\dfrac{d^2y}{dx^2}+y=x^2+2$}\\\\
+$y'=\cos{x}+2x$ \tab{$y''=-\sin{x}+2$}\\\\
+$-\sin{x}+2+\sin{x}+x^2=x^2+2 => x^2+2=x^2+2$\\\\
+Therefore $y$ is a solution to $\dfrac{d^2y}{dx^2}+y=x^2+2$.\\\\
+Problem 4:\\\\$x=2\cos{t}-3\sin{t}$ \tab{$x''+x=0$}\\\\
+$x'=-2\sin{t}-3\cos{t}$ \tab{$x''=-2\cos{t}+3\sin{t}$}\\\\
+$2\cos{t}-3\sin{t}-2\cos{t}+3\sin{t}=0 =>0=0 $\\\\
+Therefore $x$ is a solution to $x''+x=0$ is a solution.\\\\
+Problem 5:\\\\$\theta=2e^{3t}-e^{2t}$ \tab{$\dfrac{d^2\theta}{dt^2}-\theta\dfrac{d\theta}{dt}+3\theta=-2e^{2t}$}\\\\
+$\theta'=6e^{3t}-2e^{2t}$ \tab{$\theta''=18e^{3t}-4e^{2t}$}\\\\
+$18e^{3t}-4e^{2t}-(2e^{3t}-e^{2t})(6e^{3t}-2e^{2t})+6e^{3t}-3e^{2t}=-2e^{2t}$\\\\
+$24e^{3t}-7e^{2t}-12e^{6t}+10e^{5t}-2e^{4t}\neq-2e^{2t}$\\\\
+Therefore $\theta$ is  not a solution to $\dfrac{d^2\theta}{dt^2}-\theta\dfrac{d\theta}{dt}+3\theta=-2e^{2t}$\\\\
+Problem 6:\\\\$x=\cos{2t}$ \tab{$\dfrac{dx}{dt}+tx=\sin{2t}$}\\\\
+$x'=-2\sin{2t}$\\\\
+$-2\sin{2t}+t\cos{2t}=\sin{2t} => t\cos{2t}\neq3\sin{2t}$\\\\
+Therefore $x$ is not a solution to $\dfrac{dx}{dt}+tx=\sin{2t}$.\\\\\\\\
+Problem 9:\\\\
+$x^2+y^2=4$ \tab{$\dfrac{dy}{dx}=\dfrac{x}{y}$}\\\\
+\\$2x+2yy'=0=>2yy'=-2x=>y'=-\dfrac{x}{y}$\\\\
+$-\dfrac{x}{y}\neq\dfrac{x}{y}$\\\\
+Therefore $x^2+y^2=4$ is not a solution to $\dfrac{dy}{dx}=\dfrac{x}{y}$.\\\\
+Problem 10:\\\\
+$y-\ln{y}=x^2+1$ \tab{$\dfrac{dy}{dx}=\dfrac{2xy}{y-1}$}\\\\
+\\$y'-\dfrac{y'}{y}=2x=>y'\left(1-\dfrac{1}{y}\right)=2x=>y'=\dfrac{2xy}{y-1}$\\\\
+\\Therefore $y-\ln{y}=x^2+1$ is a solution to $\dfrac{dy}{dx}=\dfrac{2xy}{y-1}$.\\\\
+Problem 22:\\\\
+$\phi(x)=c_1e^x+c_2e^{-2x}$\tab{$\dfrac{d^2y}{dx^2}+\dfrac{dy}{dx}-2y=0$}\\\\
+$y=c_1e^x+c_2e^{-2x}$\\
+$y'=c_1e^x-2c_2e^{-2x}$\\
+$y''=c_1e^x+4c_2e^{-2x}$\\\\
+$c_1e^x+4c_2e^{-2x}+c_1e^x-2c_2e^{-2x}-2(c_1e^x+c_2e^{-2x})=0$\\
+All values cancel making $0=0$ therefore $\phi$ is a solution.\\\\
+Find $c_1$ and $c_2$ such that the initial conditions are met.\\\\
+a) $y(0)=2$, $y'(0)=1$\\\\
+After plugging in 0 into x need to find constant values such that,\\\\
+$c_1+c_2=2$\\
+$c_1-2c_2=1$\\
+$c_1+4c_2=3$ (get this one by plugging initial conditions into the ODE)\\\\\\\\
+Using a bit of linear algebra and row reductions I came to the following matrix
+\begin{center}$\begin{bmatrix}
+1 & 0 & \dfrac{5}{3}\\\\
+0 & 1 & \dfrac{1}{3}\\\\
+0 & 0 & 0
+\end{bmatrix}$\end{center}
+This tells us that $c_1=\dfrac{5}{3}$ and $c_2=\dfrac{1}{3}$\\\\
+b) $y(1)=1$, $y'(1)=0$\\\\
+Using the same idea as letter (a) we need to find constants such that,\\\\
+$ec_1+\dfrac{c_2}{e^2}=1$\\
+$ec_1-\dfrac{2c_2}{e^2}=0$\\
+$ec_1+\dfrac{4c_2}{e^2}=2$\\\\
+Use linear algebra again and come to a reduced matrix
+\begin{center}$\begin{bmatrix}
+1 & 0 & \dfrac{2}{3e}\\\\
+0 & 1 & \dfrac{e^2}{3}\\\\
+0 & 0 & 0
+\end{bmatrix}$\end{center}
+The matrix indicates that $c_1=\dfrac{2}{3e}$ and $c_2=\dfrac{e^2}{3}$
+\end{document}
