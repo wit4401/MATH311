@@ -1,0 +1,59 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,mathtools,amssymb}
+
+\title{\textbf{MATH 311 Homework 3.2 and 3.3}}
+\author{Will Townsend}
+\date{March 11, 2022}
+\begin{document}
+
+\maketitle
+
+\section*{Section 3.2}
+\subsection*{Problem 14}
+$\dfrac{dP}{dt}=kP=>\int\dfrac{dP}{P}=\int k\:dt\\\\$
+$\ln{P}=kt+C => P=Ae^{kt}\\\\$
+$P(0)=1500=>1500=A\\\\$
+$P(26)=6000=>6000=1500e^{26k}=>4=e^{26k}=>\ln{4}=26k=>k=\dfrac{\ln{4}}{26}$\\\\
+$P(40)=1500e^{\frac{\ln{4}}{26}(40)}\approx12657.19$
+\subsection*{Problem 15}
+$p_0=P(0)=1500\quad p_a=P(13)=4100\quad p_b=P(26)=6000\quad p_1=P(40)$\\\\
+$p_1=\dfrac{(4100)(6000)-2(1500)(6000)+(1500)(4100)}{(4100)^2-(1500)(6000)}(4100)\approx6693.34$
+\subsection*{Problem 21}
+If $V=$ volume$\quad S_a=$ surface area $\quad t=$ time $\quad A=$ diameter\\\\
+$\dfrac{dA}{dt}=-k\dfrac{dV}{dS_a}\qquad\dfrac{dV}{dS_a}=\dfrac{\frac{4}{3}\pi\left(\frac{A}{2}\right)^3}{4\pi\left(\frac{A}{2}\right)^2}=\dfrac{A}{6}$\\\\
+$\dfrac{dA}{dt}=-\dfrac{Ak}{6}=>\int\dfrac{dA}{A}=-\int\dfrac{kdt}{6}=>A=Ce^{-\frac{kt}{6}}$\\\\
+$A(0)=4\qquad C=4$\\
+$A(.5)=3\qquad 3=4e^{-\frac{k}{12}}=>k=-12\ln{\frac{3}{4}}$\\
+$A(t)=2\qquad 2=4e^{12\ln{\frac{3}{4}}t}=>\ln{.5}=12\ln{\frac{3}{4}}t=>t=\dfrac{\ln{.5}}{12\ln{\frac{3}{4}}}=>t\approx$ hrs\\
+$A(t)\approx0\qquad$ I honestly don't know how to answer this one
+\subsection*{Problem 23}
+$\dfrac{dA}{dt}=-kA=>\ln{A}=-kt+C=>A=Ce^{-kt}$\\\\
+$A(0)=50\qquad50=C$\\
+$A(3)=10\qquad10=50e^{-3k}=>\frac{1}{5}=e^{-3k}=>\ln{\left(\frac{1}{5}\right)}=-3k=>k=-\frac{\ln{\left(\frac{1}{5}\right)}}{3}$\\
+$A(4)=50e^{\frac{4\ln{\left(\frac{1}{5}\right)}}{3}}\approx5.85\quad11.7\%$ remaining
+\subsection*{Problem 24}
+Using equation in Problem 23:\\\\
+$A(0)=300\qquad C=300$\\
+$A(5)=200\qquad200=300e^{-5k}=>\frac{2}{3}=e^{-5k}=>k=-\ln{\left(\frac{2}{3}\right)}\frac{1}{5}$\\
+$A(?)=10\qquad10=300e^{\ln{\left(\frac{2}{3}\right)}\frac{1}{5}t}=>\frac{1}{30}=e^{\ln{\left(\frac{2}{3}\right)}\frac{1}{5}t}=>\ln{\frac{1}{30}}=\ln{\left(\frac{2}{3}\right)}\frac{1}{5}t=>t=\dfrac{5\ln{\frac{1}{30}}}{\ln{\left(\frac{2}{3}\right)}}$\\
+$t\approx41.94$ yrs
+\section*{Section 3.3}
+\subsection*{Problem 1}
+$T(t)=21+Ae^{kt}$\\
+$T(0)=95\qquad95=21+A(1)=>A=74$\\
+$T(5)=80\qquad80=21+74e^{5k}=>59=74e^{5t}=>\frac{59}{74}=e^{5k}=>\ln{\left(\frac{59}{74}\right)}=5k=>k=\dfrac{\ln{\left(\frac{59}{74}\right)}}{5}$\\
+$T(?)=50\qquad50=21+74e^{\frac{\ln{\left(\frac{59}{74}\right)}}{5}t}=>\frac{29}{74}=e^{\frac{\ln{\left(\frac{59}{74}\right)}}{5}t}=>\ln{\frac{29}{74}}=\frac{\ln{\left(\frac{59}{74}\right)}}{5}t=>t=\dfrac{5\ln{\left(\frac{29}{74}\right)}}{\ln{\left(\frac{59}{74}\right)}}$\\
+$t\approx20.68$ min
+\subsection*{Problem 2}
+$T(t)=T_m+Ae^{kt}$\\\\
+$T(0)=35\qquad35=70+A=>A=-35$\\\\
+$T(3)=40\qquad40=70-35e^{3k}=>\ln{\left(\frac{6}{7}\right)}=3k=>k=\frac{\ln{\left(\frac{6}{7}\right)}}{3}$\\\\
+$T(20)=70-35e^{\frac{20\ln{\left(\frac{6}{7}\right)}}{3}}\approx57.48^\circ F$
+\subsection*{Problem 3}
+$T(t)=T_m+Ae^{kt}$\\\\
+$T(0)=70\qquad70=32+A=>A=38$\\\\
+$T(15)=60\qquad60=32+38e^{15k}=>28=38e^{15k}=>k=\frac{\ln{\frac{14}{19}}}{15}$\\\\
+$T(?)=56\qquad56=32+38e^{\frac{\ln{\frac{14}{19}}}{15}t}=>\ln{\frac{12}{19}}=\frac{\ln{\frac{14}{19}}}{15}t=>t=\frac{15\ln{\frac{12}{19}}}{\ln{\frac{14}{19}}}$\\\\
+$t\approx22.57$ min
+\end{document}
