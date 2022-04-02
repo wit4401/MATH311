@@ -1,0 +1,38 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,mathtools,amssymb}
+
+\title{\textbf{MATH 311 Homework 1.4}}
+\author{Will Townsend}
+\date{April 1, 2022}
+
+\begin{document}
+
+\maketitle
+\begin{center}\emph{For all problems:}\\$n=4\quad h=\frac{1-0}{4}=0.25$\\
+$y_{i+1}=hf(x_i,y_i)+y_i$\end{center}
+\section*{Problem 1}
+$\dfrac{dy}{dx}=-\dfrac{x}{y}\qquad y(0)=4\quad y(1)=?$\\\\
+$y(0.25)=0.25(0)+4=4.25$\\
+$y(0.5)=0.25(-\frac{0.25}{4.25})+4.25\approx4.24$\\
+$y(0.75)=0.25(-\frac{0.5}{4.24})+4.24\approx4.21$\\
+$y(1)=0.25(-\frac{0.75}{4.21})+4.21\approx4.17$
+\section*{Problem 2}
+$\dfrac{dy}{dx}=y(2-y)\qquad y(0)=3\quad y(1)=?$\\\\
+$y(0.25)=0.25(-3)+3=2.25$\\
+$y(0.5)=0.25(-0.5625)+2.25\approx2.1094$\\
+$y(0.75)=0.25(-0.23076836)+2.1094\approx2.0517$\\
+$y(1)=0.25(-0.10607289)+2.0517\approx2.0252$\\
+\section*{Problem 3}
+$\dfrac{dy}{dx}=x+y\qquad y(0)=1\quad y(1)=?$\\\\
+$y(0.25)=0.25(1)+1=1.25$\\
+$y(0.5)=0.25(1.5)+1.25=1.625$\\
+$y(0.75)=0.25(2.125)+1.625\approx2.1563$\\
+$y(1)=0.25(2.90625)+2.1563\approx2.8829$\\
+\section*{Problem 4}
+$\dfrac{dy}{dx}=\dfrac{x}{y}\qquad y(0)=-1\quad y(1)=?$\\\\
+$y(0.25)=0.25(0)-1=-1$\\
+$y(0.5)=0.25(-0.25)-1=-1.0625$\\
+$y(0.75)=0.25(-0.470588235)-1.0625\approx-1.1801$\\
+$y(1)=0.25(-0.635539361)-1.1801\approx-1.3390$\\
+\end{document}
