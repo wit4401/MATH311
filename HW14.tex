@@ -1,0 +1,95 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,mathtools,amssymb}
+
+\title{\textbf{MATH 311 Homework 4.3}}
+\author{Will Townsend}
+\date{April 15, 2022}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem 13}
+$y''-y'+9y=3\sin{3t}\qquad n^2-n+9=0=>(n-4)(n+5)=0=>n=4,-5$\\\\
+$y_c=c_1e^{4x}+c_2e^{-5x}$\\
+$y_p=A\sin{3t}+B\cos{3t}\quad y_p'=3A\cos{3t}-3B\sin{3t}\quad y_p''=-9A\sin{3t}-9B\cos{3t}$\\
+$-9A\sin{3t}-9B\cos{3t}-3A\cos{3t}+3B\sin{3t}+9A\sin{3t}+9B\cos{3t}=3\sin{3t}=$\\
+$-A\cos{3t}+B\sin{3t}=\sin{3t}=>A=0\quad B=1\therefore$\\
+$y_p=\cos{3t}$\\\\
+$y=c_1e^{4t}+c_2e^{-5t}+\cos{3t}$
+\section*{Problem 14}
+$2z''+z=9e^{2t}\qquad 2n^2+1=0=>n=\sqrt{2}i=>\alpha=0\quad\beta=\sqrt{2}$\\\\
+$z_c=c_1\sin{\left(\sqrt{2}t\right)}+c_2\cos{\left(\sqrt{2}t\right)}$\\
+$z_p=Ae^{2t}\quad y_p'=2Ae^{2t}\quad y_p''=4Ae^{2t}$\\
+$8Ae^{2t}+Ae^{2t}=9e^{2t}=>A=1$\\\\
+$z=c_1\sin{\left(\sqrt{2}t\right)}+c_2\cos{\left(\sqrt{2}t\right)}+e^{2t}$
+\section*{Problem 15}
+$y''-5y'+6y=xe^x\qquad n^2-5n+6=0=>(n-6)(n+1)=0=>n=6,-1$\\\\
+$y_c=c_1e^{6x}+c_2e^{-x}$\\
+$y_p=Axe^x+Be^x\quad y_p'=Axe^x+Ae^x+Be^x\quad y_p''=Axe^x+2Ae^x+Be^x$\\
+$Axe^x+2Ae^x+Be^x-5Axe^x-5Ae^x-5Be^x+6Axe^x+6Be^x=xe^x=$\\
+$2Ax-3A+2B=x=>2A=1\quad-3A+2B=0=>A=\frac{1}{2}\quad B=\frac{3}{4}$\\\\
+$y=c_1e^{6x}+c_2e^{-x}+\frac{1}{2}xe^x+\frac{3}{4}e^x$
+\section*{Problem 16}
+$\theta''-\theta=t\sin{t}\qquad n^2-1=0=>n=-1,1$\\\\
+$\theta_c=c_1e^{-t}+c_2e^t$\\
+$\theta_p=At\sin{t}+B\sin{t}+Ct\cos{t}+D\cos{t}$\\
+$\theta_p'=At\cos{t}+A\sin{t}+B\cos{t}-Ct\sin{t}+C\cos{t}-D\sin{t}$\\
+$\theta_p''=-At\sin{t}+2A\cos{t}-Ct\cos{t}-2C\sin{t}-B\sin{t}-D\cos{t}$\\\\
+$t\sin{t}=-2At\sin{t}+2A\cos{t}-2B\sin{t}-2Ct\cos{t}-2C\sin{t}-2D\cos{t}$\\
+$t\sin{t}\quad1=-2A=>A=-\frac{1}{2}$\\
+$t\cos{t}\quad0=-2C=>C=0$\\
+$\sin{t}\quad0=-2C-2B=>B=0$\\
+$\cos{t}\quad0=-2A-2D=>D=\frac{1}{2}$\\\\
+$\theta=c_1e^{-t}+c_2e^t-\frac{1}{2}t\sin{t}+\frac{1}{2}\cos{t}$
+\section*{Problem 17}
+$y''+4y=8\sin{2t}\qquad n^2+4=0=>n=\dfrac{0\pm\sqrt{0-(4)(4)(1)}}{2}=2i=>\alpha=0\quad\beta=2$\\\\
+$y_c=c_1\sin{2t}+c_2\cos{2t}$\\
+$y_p=At\sin{2t}+Bt\cos{2t}$\\
+$y_p'=2At\cos{2t}+A\sin{2t}-2Bt\sin{2t}+B\cos{2t}$\\
+$y_p''=-4At\sin{2t}+4A\cos{2t}-4Bt\cos{2t}-4B\sin{2t}$\\
+$8\sin{2t}=4At\sin{2t}+4Bt\cos{2t}-4At\sin{2t}-4Bt\cos{2t}+4A\cos{2t}-4B\sin{2t}$\\
+$8\sin{2t}=4A\cos{2t}-4B\sin{2t}$\\\\
+$8\sin{2t}\quad8=-4B=>B=-2$\\
+$0\cos{2t}\quad0=4A=>A=0$\\\\
+$y=c_1\sin{2t}+c_2\cos{2t}-2t\cos{2t}$
+\section*{Problem 18}
+$y''-2y'+y=8e^t\qquad n^2-2n+1=0=>(n-1)^2=0=>n=1,1$\\\\
+$y_c=c_1e^t+c_2te^t$\\
+$y_p=At^2e^t\quad y_p'=At^2e^t+2Ate^t\quad y_p''=At^2e^t+4Ate^t+2Ae^t$\\
+$At^2e^t+4Ate^t+2Ae^t-2At^2e^t-4Ate^t+At^2e^t=8e^t=>2A=8=>A=4$\\\\
+$y=c_1e^t+c_2te^t+4t^2e^t$
+\section*{Problem 27}
+$y''+9y=4t^3\sin{3t}\qquad n^2+9=0=>n=3i=>\alpha=0\quad\beta=3$\\\\
+$y_c=c_1\sin{3t}+c_2\cos{3t}$\\
+$y_p=At^4\sin{3t}+Bt^3\sin{3t}+Ct^2\sin{3t}+Dt\sin{3t}+Et^4\cos{3t}+Ft^3\cos{3t}+Gt^2\cos{3t}+Ht\cos{3t}$
+\section*{Problem 28}
+$y''-6y'+9y=5t^6e^{3t}\qquad n^2-6n+9=0=>(n-3)^2=0=>n=3,3$\\\\
+$y_c=c_1e^{3t}+c_2te^{3t}$\\
+$y_p=At^8e^{3t}+Bt^7e^{3t}+Ct^6e^{3t}+Dt^5e^{3t}+Et^4e^{3t}+Ft^3e^{3t}+Gt^2e^{3t}$
+\section*{Problem 29}
+$y''+3y'-7y=t^4e^t\qquad n^2+3n-7=0=>n=\frac{-3\pm\sqrt{9-4(-7)}}{2}=\frac{-3\pm\sqrt{37}}{2}$\\\\
+$y_c=c_1e^{\frac{-3-\sqrt{37}}{2}t}+c_2e^{\frac{-3+\sqrt{37}}{2}t}$\\
+$y_p=At^4e^t+Bt^3e^t+Ct^2e^t+Dte^t+Ee^t$
+\section*{Problem 30}
+$y''-2y'+y=7e^t\cos{t}\qquad n^2-2n+1=0=>(n-1)^2=0=>n=1,1$\\\\
+$y_c=c_1e^t+c_2te^t$\\
+$y_p=Ae^t\sin{t}+Be^t\cos{t}$
+\section*{Problem 31}
+$y''+2y'+2y=8t^3e^{-t}\sin{t}\qquad n^2+2n+2=0=>n=\frac{-2\pm2i}{2} =>\alpha=-1\quad\beta=1$\\\\
+$y_c=c_1e^{-t}\sin{t}+c_2e^{-t}\cos{t}$\\
+$y_p=e^{-t}\sin{t}(At^4+Bt^3+Ct^2+Dt)+e^{-t}\cos{t}(Et^4+Ft^3+Gt^2+Ht)$
+\section*{Problem 32}
+$y''-y'-12y=2t^6e^{-3t}\qquad n^2-n-12=0=>(n-4)(n+3)=0=>n=-3,4$\\\\
+$y_c=c_1e^{-3t}+c_2e^{4t}$\\
+$y_p=e^{-3t}(At^7+Bt^6+Ct^5+Dt^4+Et^3+Ft^2+Gt)$
+\section*{Problem 33}
+$y'''-y''+y=\sin{t}\qquad n^3-n^2+1=0=>$\\\\
+$y_c=c_1\cdot?+c_2\cdot?+c_3\cdot?$\\
+$y_p=A\sin{t}+B\cos{t}\quad y_p'=A\cos{t}-B\sin{t}\quad y_p''=-A\sin{t}-B\cos{t}\quad y_p'''=-A\cos{t}+B\sin{t}$\\
+$2A\sin{t}+2B\cos{t}-A\cos{t}+B\sin{t}=\sin{t}$\\
+$2A+B=1\quad2B-A=0\\B=1-2A=>2-4A-A=>A=\frac{2}{5}$\\
+$\frac{4}{5}+B=1=>B=\frac{1}{5}$\\\\
+$y=c_1\cdot?+c_2\cdot?+c_3\cdot?+\frac{2}{5}\sin{t}+\frac{1}{5}\cos{t}$
+\end{document}
